@@ -32,7 +32,7 @@ header{
     transition: 0.3s ease-in-out;
 }
 .logo:hover{
-    transform: scale(1,1);
+    transform: scale(1.1);
 }
 .nav-links{
     display: flex;
@@ -52,5 +52,128 @@ li a::before{
     top: 25px;
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
-    background: linear-gradient(to right,#cca1ff, rgb(147, 208, 255));
+    background: linear-gradient(to right,rgb(204, 161, 255), rgb(147, 208, 255));
+}
+li a:hover::before{
+    width: 100%;
+}
+.visit-btn{
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right,rgb(204, 161, 255), rgb(147, 208, 255));
+}
+.visit-btn:hover{
+    background: linear-gradient(to right,rgb(147, 208, 255),rgb(204, 161, 255));
+    transform: scale(1.03);
+}
+#menu-burger{
+    font-size: 2rem;
+    display: none;
+}
+section{
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+.about img{
+    width: 30vw;
+    border-radius: 50%;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.info-box h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.info-box h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.info-box span{
+    background: linear-gradient(to right,rgb(204, 161, 255), rgb(147, 208, 255));
+    background-clip: text;
+    color: transparent;
+}
+.socials{
+    display: flex;
+    gap: 2rem;
+}
+.socials i{
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.socials i:hover{
+    transform: scale(1.1);
+}
+
+.typing-text{
+    font-size: 28px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "hacker";
+    color: #b74b4b;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    right: -8;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #b74b4b;
+    }
+}
+
+@keyframes words{
+    0%, 25%{
+        content: "Cyber Professional";
+    }
+    26%, 50%{
+        content: "Gamer";
+    }
+    51%, 75%{
+        content: "Nerd";
+    }
+    76%, 100%{
+        content: "Homelabber";
+    }
 }
