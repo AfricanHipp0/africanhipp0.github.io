@@ -92,7 +92,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 8rem;
 }
 .about img{
     width: 30vw;
@@ -104,7 +104,7 @@ section{
     text-align: center;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .info-box h3{
     font-size: 1.8rem;
@@ -116,13 +116,13 @@ section{
     font-weight: 600;
 }
 .info-box span{
-    background: linear-gradient(to right,rgb(204, 161, 255), rgb(147, 208, 255));
+    background: black;
     background-clip: text;
     color: transparent;
 }
 .socials{
     display: flex;
-    gap: 2rem;
+    gap: 1.2rem;
 }
 .socials i{
     font-size: 2.5rem;
@@ -145,8 +145,11 @@ section{
 
 .typing-text span::before{
     content: "hacker";
-    color: #b74b4b;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-clip: text;
+    color: transparent;
     animation: words 20s infinite;
+    font-size: 2rem;
 }
 
 .typing-text span::after{
@@ -155,12 +158,6 @@ section{
     width: calc(100% + 8px);
     height: 100%;
     right: -8;
-}
-
-@keyframes cursor{
-    to{
-        border-left: 3px solid #b74b4b;
-    }
 }
 
 @keyframes words{
