@@ -133,6 +133,14 @@ section{
     transform: scale(1.1);
 }
 
+.socials a{
+    color:inherit
+}
+
+.socials a:visited{
+    color: inherit;
+}
+
 .typing-text{
     font-size: 28px;
     font-weight: 600;
@@ -229,6 +237,58 @@ section{
     background: linear-gradient(to right, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     background-clip: text;
     color: transparent;
+}
+
+.achievements-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.achievements-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+}
+
+.achievements-card{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.achievements-card:hover{
+    transform: scale(1.02);
+    background-color: black;
+    color: white;
+}
+
+.achievements-card i{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.achievements-card span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: linear-gradient(to right, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.achievements img {
+    align-items: center;
+    margin-top: 15px;
+    width: 10vw;
 }
 
 ::-webkit-scrollbar{
