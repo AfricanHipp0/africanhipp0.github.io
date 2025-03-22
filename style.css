@@ -95,7 +95,7 @@ section{
     gap: 8rem;
 }
 .about img{
-    width: 25vw;
+    width: 24vw;
     border-radius: 50%;
 }
 .info-box{
@@ -301,4 +301,78 @@ section{
 
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(to bottom, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+@media(max-width:1280px){
+    header{
+        padding: 1rem 2rem;
+    }
+    .about .about-container{
+        gap: 3rem;
+    }
+    .experience-info{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:768px){
+    header{
+        gap: 1rem;
+        padding: 1rem 1rem;
+    }
+    header .logo{
+        font-size: 1rem;
+    }
+    header .visit-btn{
+        display: none;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .experience-info img{
+        width: 70vw;
+    }
+    .achievements img{
+        width: 25vw;
+    }
+}
+
+@media(max-width:600px){
+    header #menu-burger{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 3rem;
+        display: none;
+    }
+    .nav-links li{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    header{
+        padding: 1rem 5rem;
+        gap: 8rem;
+    }
+    header .logo{
+        font-size: 1.5rem;
+    }
+    .about-container img{
+        width: 80vw;
+    }
 }
