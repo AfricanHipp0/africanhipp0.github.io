@@ -170,16 +170,16 @@ section{
 
 @keyframes words{
     0%, 25%{
-        content: "Cyber Professional";
+        content: "Delivery Manager";
     }
     26%, 50%{
-        content: "Gamer";
+        content: "Penetration Tester";
     }
     51%, 75%{
-        content: "Nerd";
+        content: "System Administrator";
     }
     76%, 100%{
-        content: "Homelabber";
+        content: "Team Lead";
     }
 }
 
@@ -289,6 +289,14 @@ section{
     align-items: center;
     margin-top: 15px;
     width: 10vw;
+}
+
+.achievements a{
+    color:inherit
+}
+
+.achievements a:visited{
+    color: inherit;
 }
 
 ::-webkit-scrollbar{
