@@ -142,46 +142,36 @@ section{
     color: inherit;
 }
 
-.typing-text{
+.typing-text {
     font-size: 28px;
     font-weight: 600;
     min-width: 280px;
 }
 
-.typing-text span{
-    position: relative;
+.typing-text {
+    font-size: 28px;
+    font-weight: 600;
+    min-width: 280px;
 }
 
-.typing-text span::before{
-    content: "hacker";
-    background: linear-gradient(to right, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    background-clip: text;
+.typing-text span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgb(204, 161, 255);
+    width: 0ch;
+    background: linear-gradient(to right, rgb(204, 161, 255), rgb(147, 208, 255));
+    -webkit-background-clip: text;
     color: transparent;
-    animation: words 20s infinite;
-    font-size: 2rem;
+    animation: typewriter 6s steps(18) 1s infinite;
 }
 
-.typing-text span::after{
-    content: "";
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    right: -8;
-}
-
-@keyframes words{
-    0%, 25%{
-        content: "Delivery Manager";
-    }
-    26%, 50%{
-        content: "Penetration Tester";
-    }
-    51%, 75%{
-        content: "System Administrator";
-    }
-    76%, 100%{
-        content: "Team Lead";
-    }
+@keyframes typewriter {
+    0% { width: 0ch; }
+    30% { width: 18ch; }
+    60% { width: 18ch; }
+    90% { width: 0ch; }
+    100% { width: 0ch; }
 }
 
 .section-title{
