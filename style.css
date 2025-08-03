@@ -297,6 +297,15 @@ section{
     background-color: rgb(219, 219, 219);
 }
 
+.footer {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  background: #f0f0f0;
+}
+
 @media(max-width:1280px){
     header{
         padding: 1rem 2rem;
