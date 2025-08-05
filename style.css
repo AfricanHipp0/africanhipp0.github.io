@@ -289,6 +289,95 @@ section{
     color: inherit;
 }
 
+.publications-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.publications-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+}
+
+.publications-card{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.publications-card:hover{
+    transform: scale(1.02);
+    background-color: rgb(240, 229, 253);
+    color: rgb(0, 0, 0);
+}
+
+.publications-card i{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.publications-card span{
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+.publications img {
+    align-items: center;
+    margin-top: 15px;
+    width: 10vw;
+}
+
+.publications a{
+    color:inherit
+}
+
+.publications a:visited{
+    color: inherit;
+}
+.sql-terminal {
+    color: #d4d4d4;
+    padding: 1rem;
+    font-family: 'Fira Code', monospace;
+    border-radius: 8px;
+    max-width: 600px;
+    overflow-x: auto;
+    line-height: 1.6;
+}
+
+.sql-line {
+    color: #db0000;
+}
+
+.keyword {
+    color: #000000;
+    font-weight: bold;
+}
+
+.identifier {
+    color: rgb(204, 161, 255);
+}
+
+.punctuation {
+    color: #d4d4d4;
+}
+
+.comment {
+    color: #fb2a00;
+    font-style: italic;
+}
+
 ::-webkit-scrollbar{
     width: 20px;
 }
