@@ -242,6 +242,7 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 2rem;
+    align-items: stretch;
 }
 
 .certificates-card{
@@ -256,6 +257,8 @@ section{
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .certificates-card:hover{
@@ -300,6 +303,10 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 2rem;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .publications-card{
@@ -314,6 +321,8 @@ section{
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .publications-card:hover{
