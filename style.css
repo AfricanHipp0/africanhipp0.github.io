@@ -238,14 +238,36 @@ section{
     gap: 5rem;
 }
 
+.certificates-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.cert-group-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid black;
+}
+
 .certificates-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    align-items: stretch;
+    justify-content: center;
+}
+
+.certificates-grid a{
+    flex: 0 0 calc((100% - 4rem) / 3);
 }
 
 .certificates-card{
+    width: 100%;
+    height: 100%;
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -257,7 +279,6 @@ section{
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    height: 100%;
     box-sizing: border-box;
 }
 
@@ -300,16 +321,20 @@ section{
 }
 
 .publications-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    justify-items: center;
     justify-content: center;
     width: 100%;
-    margin: 0 auto;
+}
+
+.publications-grid a{
+    flex: 0 0 calc((100% - 4rem) / 3);
 }
 
 .publications-card{
+    width: 100%;
+    height: 100%;
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -321,7 +346,6 @@ section{
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    height: 100%;
     box-sizing: border-box;
 }
 
