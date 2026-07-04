@@ -3,155 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Brent Zaltsman</title>
+    <title>Brent Zaltsman - Penetration Tester</title>
+
+    <meta name="description" content="Brent Zaltsman (AfricanHipp0) - OSCP-certified penetration tester specialising in web, infrastructure, cloud and mobile security. CVE-2025-43079 author.">
+    <meta name="author" content="Brent Zaltsman">
+    <meta name="theme-color" content="#0a0b0d">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Brent Zaltsman - Penetration Tester">
+    <meta property="og:description" content="OSCP-certified penetration tester . Web · Infra · Cloud · Mobile · AI Systems. CVE-2025-43079 author.">
+    <meta property="og:image" content="/assets/BZ.jpg">
+    <meta property="og:url" content="https://africanhipp0.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0b0d'/%3E%3Cpath d='M8 10l5 6-5 6' fill='none' stroke='%23ff4d3d' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='16' y1='22' x2='24' y2='22' stroke='%23ff4d3d' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="glow" aria-hidden="true"></div>
+
     <header class="header">
-        <a href="#" class="logo"><span>African</span><span class="highlight">Hipp0.</span></a>
+        <a href="#top" class="logo"><span class="logo-mark">&gt;_</span> <span>African</span><span class="highlight">Hipp0</span></a>
 
-        <ul class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#certificates">Certificates</a>
-            </li>
-            <li>
-                <a href="#publications">Publications</a>
-            </li>
-        </ul>
-        <i class="fa-solid fa-bars" id="menu-burger"></i>
+        <nav class="nav-links" id="nav-links">
+            <a href="#about">whoami</a>
+            <a href="#experience">experience</a>
+            <a href="#certificates">certs</a>
+            <a href="#publications">research</a>
+            <a href="#contact">contact</a>
+        </nav>
 
-        <a href="https://github.com/AfricanHipp0"><button class="visit-btn">Visit Github</button></a>
-
+        <a href="https://github.com/AfricanHipp0" target="_blank" rel="noopener" class="visit-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+        <button class="menu-burger" id="menu-burger" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
     </header>
 
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="/assets/BZ.jpg" alt="">
-            <div class="info-box">
-                <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>Brent <span class="about-highlight">Zaltsman</span></h1>
+    <section id="top" class="hero">
+        <div id="about" class="hero-inner">
+            <div class="hero-text reveal">
+                <div class="terminal">
+                    <span class="prompt">root@africanhipp0</span><span class="sep">:</span><span class="path">~</span><span class="dollar">$</span>
+                    <span class="cmd">whoami</span>
+                    <span class="type-target" id="typer"></span><span class="caret"></span>
                 </div>
-                <div class="typing-text">
-                    <span>Penetration Tester</span>
+
+                <h1 class="hero-name">Brent <span>Zaltsman</span></h1>
+
+                <p class="hero-bio">
+                    Penetration tester with hands-on offensive
+                    security experience across <strong>web</strong>, <strong>infrastructure</strong>,
+                    <strong>cloud</strong>,<strong>mobile</strong> and <strong>AI systems</strong>. I find the critical flaws
+                    others miss, prove real-world impact, and translate it into risk leadership can act on.
+                </p>
+
+                <div class="hero-tags">
+                    <span class="chip">OSCP</span>
+                    <span class="chip">GPEN</span>
+                    <span class="chip">GMOB</span>
+                    <span class="chip chip-cve">CVE-2025-43079 · Author</span>
                 </div>
-                <div class="socials">
-                    <a href="https://github.com/AfricanHipp0" target="_blank"><i class="fa-brands fa-github"></i></a>
-                      <a href="https://www.linkedin.com/in/brent-zaltsman" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+                <div class="hero-cta">
+                    <div class="hero-socials">
+                        <a href="https://github.com/AfricanHipp0" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/brent-zaltsman" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
 
+            <div class="hero-portrait reveal">
+                <div class="portrait-frame">
+                    <img src="/assets/BZ.jpg" alt="Portrait of Brent Zaltsman">
+                    <span class="corner tl"></span><span class="corner tr"></span>
+                    <span class="corner bl"></span><span class="corner br"></span>
+                </div>
+                <div class="portrait-meta">
+                    <span>LOC: Australia</span>
+                    <span>ROLE: Penetration Tester</span>
+                    <span>STATUS: <b class="online">ONLINE</b></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats reveal">
+            <div class="stat"><b>7+</b><span>yrs offensive security</span></div>
+            <div class="stat"><b>5</b><span>industry certifications</span></div>
+            <div class="stat"><b>1</b><span>CVE published</span></div>
         </div>
     </section>
+
     <section id="experience" class="experience">
+        <div class="section-head reveal">
+            <span class="section-index">// 01</span>
+            <h2 class="section-title">Experience</h2>
+            <p class="section-sub">A track record of offensive security delivery and leadership.</p>
+        </div>
 
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-info">
-            <div class="grid">
-                <div class="grid-card">
-                    <i class="fa-solid fa-terminal"></i>
-                    <span>Penetration Testing - <span class="date">2025</span></span>
-                    <p>Conducting advanced security assessments across a range of environments, including web, infrastructure, and cloud platforms. Responsible for identifying critical vulnerabilities, exploiting complex security flaws, and delivering actionable recommendations to uplift security posture. Engaged in red teaming and threat simulation exercises to test detection and response capabilities. Works closely with stakeholders to ensure alignment with business risk and compliance requirements.</p>
+        <div class="timeline">
+            <article class="tl-card reveal">
+                <div class="tl-year">2025</div>
+                <div class="tl-body">
+                    <div class="tl-head"><i class="fa-solid fa-terminal"></i><h3>Penetration Testing</h3></div>
+                    <p>Conducting advanced security assessments across web, infrastructure, and cloud platforms - identifying critical vulnerabilities, exploiting complex flaws, and delivering actionable recommendations to uplift security posture. Engaged in red teaming and threat-simulation exercises to test detection and response, working closely with stakeholders to align findings to business risk and compliance.</p>
                 </div>
-                <div class="grid-card">
-                    <i class="fa-solid fa-list-check"></i>
-                    <span>Delivery Management - <span class="date">2019</span></span>
-                    <p>Led delivery in a high-performing offensive security team delivering penetration testing and threat simulation engagements. Oversaw end-to-end project delivery and stakeholder engagement. Played a key role in strategic planning, capability uplift, and integration of offensive security activities into broader risk management programs.</p>
-                </div>
-                <div class="grid-card">
-                    <i class="fa-solid fa-people-group"></i>
-                    <span>Team Lead - <span class="date">2023</span></span>
-                    <p>I led a multidisciplinary team comprising of a Security Delivery Specialist and a Systems Engineer. I was responsible for mentoring, task delegation, and performance development while ensuring delivery of high-quality offensive security engagements. I provided technical oversight, guided strategic prioritisation, and fostered a collaborative culture that emphasised continuous improvement and ownership. My leadership approach balanced operational execution with individual growth, resulting in increased efficiency and stronger delivery outcomes aligned with business and cyber risk objectives.</p>
-                </div>
+            </article>
 
-                <div class="grid-card">
-                    <i class="fa-solid fa-server"></i>
-                    <span>System Administration - <span class="date">2018</span></span>
-                    <p>Delivered IT and security support services to a diverse client base, including infrastructure troubleshooting, system hardening, and user support. Assisted in the deployment of endpoint protection, network segmentation, and routine patch management. Gained hands-on experience across a range of IT systems while developing a strong foundation in cybersecurity principles and technical support.</p>
+            <article class="tl-card reveal">
+                <div class="tl-year">2023</div>
+                <div class="tl-body">
+                    <div class="tl-head"><i class="fa-solid fa-people-group"></i><h3>Team Lead</h3></div>
+                    <p>Led a multidisciplinary team of a Security Delivery Specialist and a Systems Engineer - mentoring, delegating, and driving performance development while ensuring delivery of high-quality offensive engagements. Provided technical oversight and strategic prioritisation, fostering a culture of continuous improvement that increased efficiency and delivery outcomes aligned to cyber-risk objectives.</p>
                 </div>
-            </div>
+            </article>
+
+            <article class="tl-card reveal">
+                <div class="tl-year">2019</div>
+                <div class="tl-body">
+                    <div class="tl-head"><i class="fa-solid fa-list-check"></i><h3>Delivery Management</h3></div>
+                    <p>Led delivery in a high-performing offensive security team delivering penetration testing and threat-simulation engagements. Oversaw end-to-end project delivery and stakeholder engagement, playing a key role in strategic planning, capability uplift, and the integration of offensive security into broader risk-management programs.</p>
+                </div>
+            </article>
+
+            <article class="tl-card reveal">
+                <div class="tl-year">2018</div>
+                <div class="tl-body">
+                    <div class="tl-head"><i class="fa-solid fa-server"></i><h3>System Administration</h3></div>
+                    <p>Delivered IT and security support to a diverse client base - infrastructure troubleshooting, system hardening, endpoint protection deployment, network segmentation, and patch management. Built a strong foundation in cybersecurity principles and technical support across a wide range of systems.</p>
+                </div>
+            </article>
         </div>
     </section>
+
     <section id="certificates" class="certificates">
+        <div class="section-head reveal">
+            <span class="section-index">// 02</span>
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-sub">Verified, industry-recognised credentials.</p>
+        </div>
 
-        <h2 class="section-title">Certificates</h2>
-        <div class="achievement-info">
-            <div class="certificates-group">
-                <h3 class="cert-group-title">Offensive Security</h3>
-                <div class="certificates-grid">
-                    <a href="https://www.credential.net/6c699fd9-bc09-40b3-9885-82f5a59ab84d#acc.Ak0SscEI" target="_blank">
-                    <div class="certificates-card">
-                        <img src="/assets/OSCP.png" alt="">
-                        <h2>Offensive Security</h2>
-                        <p>Offensive Security Certified Professional - 2024</p>
-                    </div>
-                    </a>
-                </div>
-            </div>
-            <div class="certificates-group">
-                <h3 class="cert-group-title">SANS</h3>
-                <div class="certificates-grid">
-                    <a href="https://www.credly.com/badges/59c30be2-1a23-4995-a106-4e052e32efff/public_url" target="_blank">
-                    <div class="certificates-card">
-                        <img src="/assets/GPEN.png" alt="">
-                        <h2>GIAC</h2>
-                        <p>GIAC Penetration Tester - 2022</p>
-                    </div>
-                    </a>
-                    <a href="https://www.credly.com/badges/dac4b7a8-22e9-4fff-a56f-f0853dec6dad/public_url" target="_blank">
-                    <div class="certificates-card">
-                        <img src="/assets/GMOB.png" alt="">
-                        <h2>GIAC</h2>
-                        <p>GIAC Mobile Device Security Analyst - 2025</p>
-                    </div>
-                    </a>
-                    <a href="https://www.credly.com/badges/dac4b7a8-22e9-4fff-a56f-f0853dec6dad/public_url" target="_blank">
-                    <div class="certificates-card">
-                        <img src="/assets/GIAC-Adv.png" alt="">
-                        <h2>GIAC</h2>
-                        <p>GIAC Advisory Board - 2025</p>
-                    </div>
-                    </a>
-                </div>
-            </div>
-            <div class="certificates-group">
-                <h3 class="cert-group-title">Xintra</h3>
-                <div class="certificates-grid">
-                    <a href="https://www.xintra.org/certificates/2800:1vIl5n:WeYU67NulYuLJ9EJpWwmkBOsxhK92aUNfUb34HuIYkw" target="_blank">
-                    <div class="certificates-card">
-                        <img src="/assets/XINTRA.png" alt="">
-                        <h2>XINTRA</h2>
-                        <p>Attacking and Defending Azure & M365 - 2025</p>
-                    </div>
-                    </a>
-                </div>
+        <div class="cert-group reveal">
+            <h3 class="cert-group-title">Offensive Security</h3>
+            <div class="cert-grid">
+                <a class="cert-card" href="https://www.credential.net/6c699fd9-bc09-40b3-9885-82f5a59ab84d#acc.Ak0SscEI" target="_blank" rel="noopener">
+                    <img src="/assets/OSCP.png" alt="OSCP badge">
+                    <div class="cert-meta"><h4>OSCP</h4><p>Offensive Security Certified Professional</p><span class="cert-year">2024</span></div>
+                    <i class="fa-solid fa-arrow-up-right-from-square cert-ext"></i>
+                </a>
             </div>
         </div>
-    </section>
-   <section id="publications" class="publications">
-        <h2 class="section-title">Publications</h2>
-        <div class="publications-info">
-            <div class="publications-grid">
-                <a href="/publications/CVE-2025-43079/">
-                <div class="publications-card">
-                    <img src="/assets/QUALYS.png" alt="">
-                    <h2>CVE-2025-43079</h2>
-                    <p>Local Privilege Escalation via Qualys Cloud Agents</p>
-                </div>
+
+        <div class="cert-group reveal">
+            <h3 class="cert-group-title">GIAC / SANS</h3>
+            <div class="cert-grid">
+                <a class="cert-card" href="https://www.credly.com/badges/59c30be2-1a23-4995-a106-4e052e32efff/public_url" target="_blank" rel="noopener">
+                    <img src="/assets/GPEN.png" alt="GPEN badge">
+                    <div class="cert-meta"><h4>GPEN</h4><p>GIAC Penetration Tester</p><span class="cert-year">2022</span></div>
+                    <i class="fa-solid fa-arrow-up-right-from-square cert-ext"></i>
+                </a>
+                <a class="cert-card" href="https://www.credly.com/badges/dac4b7a8-22e9-4fff-a56f-f0853dec6dad/public_url" target="_blank" rel="noopener">
+                    <img src="/assets/GMOB.png" alt="GMOB badge">
+                    <div class="cert-meta"><h4>GMOB</h4><p>GIAC Mobile Device Security Analyst</p><span class="cert-year">2025</span></div>
+                    <i class="fa-solid fa-arrow-up-right-from-square cert-ext"></i>
+                </a>
+                <a class="cert-card" href="https://www.credly.com/badges/dac4b7a8-22e9-4fff-a56f-f0853dec6dad/public_url" target="_blank" rel="noopener">
+                    <img src="/assets/GIAC-Adv.png" alt="GIAC Advisory Board badge">
+                    <div class="cert-meta"><h4>GIAC Advisory Board</h4><p>GIAC Advisory Board</p><span class="cert-year">2025</span></div>
+                    <i class="fa-solid fa-arrow-up-right-from-square cert-ext"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="cert-group reveal">
+            <h3 class="cert-group-title">Xintra</h3>
+            <div class="cert-grid">
+                <a class="cert-card" href="https://www.xintra.org/certificates/2800:1vIl5n:WeYU67NulYuLJ9EJpWwmkBOsxhK92aUNfUb34HuIYkw" target="_blank" rel="noopener">
+                    <img src="/assets/XINTRA.png" alt="Xintra Azure & M365 badge">
+                    <div class="cert-meta"><h4>Attacking &amp; Defending Azure &amp; M365</h4><p>Xintra</p><span class="cert-year">2025</span></div>
+                    <i class="fa-solid fa-arrow-up-right-from-square cert-ext"></i>
                 </a>
             </div>
         </div>
     </section>
+
+    <section id="publications" class="publications">
+        <div class="section-head reveal">
+            <span class="section-index">// 03</span>
+            <h2 class="section-title">Research</h2>
+            <p class="section-sub">Original vulnerability research and disclosures.</p>
+        </div>
+
+        <div class="pub-grid">
+            <a class="pub-card reveal" href="/publications/CVE-2025-43079/">
+                <div class="pub-top">
+                    <span class="pub-tag">CVE</span>
+                    <img src="/assets/QUALYS.png" alt="Qualys logo">
+                </div>
+                <h3>CVE-2025-43079</h3>
+                <p>Local Privilege Escalation via Qualys Cloud Agents - insecure <code>$PATH</code> handling in the agent uninstall script.</p>
+                <span class="pub-read">Read the write-up <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-inner reveal">
+            <span class="section-index">// 04</span>
+            <h2 class="contact-title">Let's find what's broken<br><span>before someone else does.</span></h2>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/in/brent-zaltsman" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a class="btn btn-ghost" href="https://github.com/AfricanHipp0" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span class="foot-logo">&gt;_ AfricanHipp0</span>
+        <span class="foot-mid">© <span id="year"></span> Brent Zaltsman - all rights reserved.</span>
+        <span class="foot-status"><span class="tick"></span> built &amp; broken with intent</span>
+    </footer>
+
     <script src="script.js"></script>
-  <footer class="footer">
-    <p>© 2025 AfricanHipp0. All rights reserved.</p>
-  </footer>
 </body>
 </html>
